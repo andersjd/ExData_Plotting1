@@ -1,3 +1,29 @@
+##Class Project Notes
+
+These are additional notes describing decisions made for completing the course project.
+The original ReadMe is included below in its entirety.
+
+###Data Subsetting
+
+Given the requirements of the 2 day period, the plotting code takes advantage of the fact
+that the data is pre-sorted by date in order to specifically select a set of rows based on
+line number and row count. This would not necessarily be a valid assumption for a
+production level system, but was considered acceptable given the constraints of the project.
+
+###Code Structure
+
+Each of the four code files (plot1.r through plot4.r) are stand alone. Each contains a single
+function which reads the data subset separately and produces the associated plot.
+
+The default settings for the functions assume that the source data exists in the /data
+directory under the current working directory and is named "household_power_consumption.txt".
+It also assumes that the destination for the generated PNG files are the current working
+directory. Either of these can be altered using the "SourceDataFile" and "ResultFileName"
+parameters for each function.
+
+
+
+
 ## Introduction
 
 This assignment uses data from
